@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import URLForm
 from .utils import get_short_url
 from .models import Url
-from django.contrib.sites.models import Site
+import pyperclip
 
 
 def redirect_page(request, tk):
@@ -20,6 +20,7 @@ def main(request):
             short_url = get_short_url()
             s_url = Url(long_url=long_url, short_url=short_url)
             s_url.save()
+            pyperclip.copy(domain + short_url)
             context = {'long_form': form, 'short_form': domain + short_url}
             return render(request, 'shortlink/main.html', context)
     context = {'long_form': URLForm()}

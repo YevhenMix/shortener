@@ -19,6 +19,6 @@ from shortlink.views import main, redirect_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('<str:tk>', redirect_page, name='redirect'),
+    path('<str:tk>/', redirect_page, name='redirect'),
     path('', main, name='main'),
 ]
