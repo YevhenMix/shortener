@@ -1,5 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import URLForm
+from .utils import get_short_url
+from .models import Url
+from django.contrib.sites.models import Site
+
+
+def redirect_page(request, tk):
+    long_url = Url.objects.filter(short_url=tk).first()
+    return redirect(long_url.long_url)
 
 
 def main(request):
@@ -7,9 +15,12 @@ def main(request):
         form = URLForm(request.POST or None)
         if form.is_valid():
             data = form.data
+            domain = request.headers['Referer']
             long_url = data.get('long_url')
-            short_url = "https://django.fun/docs/django/"
-            context = {'long_form': form, 'short_form': short_url}
+            short_url = get_short_url()
+            s_url = Url(long_url=long_url, short_url=short_url)
+            s_url.save()
+            context = {'long_form': form, 'short_form': domain + short_url}
             return render(request, 'shortlink/main.html', context)
     context = {'long_form': URLForm()}
     return render(request, 'shortlink/main.html', context)

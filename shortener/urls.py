@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from shortlink.views import main
+from shortlink.views import main, redirect_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('<str:tk>', redirect_page, name='redirect'),
     path('', main, name='main'),
 ]
