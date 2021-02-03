@@ -15,13 +15,13 @@ def main(request):
         form = URLForm(request.POST or None)
         if form.is_valid():
             data = form.data
-            dom = request.headers['Referer']
+            dom = request.headers['Host']
             long_url = data.get('long_url')
             short_url = get_short_url()
             s_url = Url(long_url=long_url, short_url=short_url)
             s_url.save()
-            pyperclip.copy(dom + short_url)
-            context = {'long_form': form, 'short_form': dom + short_url}
+            pyperclip.copy(dom + '/' + short_url)
+            context = {'long_form': form, 'short_form': dom + '/' + short_url}
             return render(request, 'shortlink/short.html', context)
     context = {'long_form': URLForm()}
     return render(request, 'shortlink/main.html', context)
