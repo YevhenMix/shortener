@@ -22,6 +22,6 @@ def main(request):
             s_url.save()
             pyperclip.copy(dom + short_url)
             context = {'long_form': form, 'short_form': dom + short_url}
-            return render(request, 'shortlink/main.html', context)
+            return render(request, 'shortlink/short.html', context)
     context = {'long_form': URLForm()}
     return render(request, 'shortlink/main.html', context)
