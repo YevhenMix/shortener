@@ -1,0 +1,101 @@
+[
+{
+    "model": "shortlink.url",
+    "pk": 4,
+    "fields": {
+        "long_url": "https://github.com/YevhenMix/shortener",
+        "short_url": "jXl8Fv",
+        "created_date": "2021-02-02T17:28:54.606Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 5,
+    "fields": {
+        "long_url": "https://django.fun/docs/django/ru/3.0/ref/models/fields/#field-options",
+        "short_url": "xAiNEN",
+        "created_date": "2021-02-02T17:29:40.830Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 6,
+    "fields": {
+        "long_url": "https://getbootstrap.com/docs/5.0/forms/input-group/",
+        "short_url": "np41pj",
+        "created_date": "2021-02-02T17:37:07.352Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 7,
+    "fields": {
+        "long_url": "https://data-flair.training/blogs/django-project-ideas/",
+        "short_url": "9A2ptz",
+        "created_date": "2021-02-02T17:43:45.715Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 15,
+    "fields": {
+        "long_url": "https://django.fun/docs/django/ru/3.0/ref/models/fields/#field-options",
+        "short_url": "G4PKdh",
+        "created_date": "2021-02-02T18:04:29.816Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 16,
+    "fields": {
+        "long_url": "https://hdrezka-ag.com/series/comedy/1404-kuhnya-2012.html#t:0-s:2-e:19",
+        "short_url": "7cfgh0",
+        "created_date": "2021-02-02T18:05:25.695Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 17,
+    "fields": {
+        "long_url": "https://www.youtube.com/playlist?list=LL",
+        "short_url": "BltgJE",
+        "created_date": "2021-02-02T18:07:25.159Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 18,
+    "fields": {
+        "long_url": "http://kinozed.com/movie/kuhnya-1-2-3-4-5-6-sezon/",
+        "short_url": "D2FTjU",
+        "created_date": "2021-02-03T16:04:56.429Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 19,
+    "fields": {
+        "long_url": "https://www.google.com/search?q=%D0%BA%D1%83%D1%85%D0%BD%D1%8F+%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD&rlz=1C1SQJL_enUA881UA881&oq=%D0%BA%D1%83%D1%85%D0%BD%D1%8F+%D1%81&aqs=chrome.3.69i57j46i433j0j0i433j0l3j69i61.7360j0j7&sourceid=chrome&ie=UTF-8",
+        "short_url": "3SKQw4",
+        "created_date": "2021-02-03T16:18:50.159Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 20,
+    "fields": {
+        "long_url": "https://courses.prometheus.org.ua/courses/KPI/Algorithms101/2015_Spring/courseware/544f297fab094b3cb66f3c8826a4db0b/f36bdb6f1547474bb6c67fb5878b80d5/?activate_block_id=i4x%3A%2F%2FKPI%2FAlgorithms101%2Fsequential%2Ff36bdb6f1547474bb6c67fb5878b80d5",
+        "short_url": "mtl8J9",
+        "created_date": "2021-02-03T16:28:54.647Z"
+    }
+},
+{
+    "model": "shortlink.url",
+    "pk": 21,
+    "fields": {
+        "long_url": "https://django.fun/docs/django/ru/3.0/ref/models/fields/#field-options",
+        "short_url": "LpzxeQ",
+        "created_date": "2021-02-03T17:02:00.194Z"
+    }
+}
+]
